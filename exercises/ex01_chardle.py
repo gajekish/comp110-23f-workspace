@@ -35,4 +35,4 @@ if (character == five_character_word[4]):
 if (counter == 0):
     print("No instances of " + character + " found in " + five_character_word)
 else:
-    print(str(counter) + " instances of " + character + " found in " + five_character_word)
+    print(str(counter) + " instance of " + character + " found in " + five_character_word)
