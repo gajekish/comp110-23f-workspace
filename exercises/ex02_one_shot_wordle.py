@@ -19,7 +19,7 @@ while (index < len(secret_word)):
     else:
         guess_in_word: bool = False
         inner_index: int = 0
-        while (guess_in_word != True and inner_index < len(secret_word)):
+        while (not guess_in_word and inner_index < len(secret_word)):
             if (word_guess[index] == secret_word[inner_index]):
                 guess_in_word = True
             else:
