@@ -75,6 +75,7 @@ def main() -> None:
     else:
         print("X/6 - Sorry, try again tomorrow!")
 
+
 # Makes it possible to run this Wordle program as a module and for other modules to import this to reuse.
 if __name__ == "__main__":
     main()
