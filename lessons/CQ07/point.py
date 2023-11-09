@@ -8,11 +8,23 @@ class Point:
     x: float
     y: float
     
-    def __init__(self, x_init: float, y_init: float) -> None:
+    def __init__(self, x_init: float = 0.0, y_init: float = 0.0) -> None:
         """A Constructor."""
         self.x = x_init
         self.y = y_init
 
+    def __str__(self) -> str:
+        """String magic method."""
+        return f"x: {self.x}; y: {self.y}"
+    
+    def __mul__(self, factor: int | float) -> Point:
+        """Overloads multiplication operator."""
+        return Point(self.x * factor, self.y * factor)
+    
+    def __add__(self, value: int | float) -> Point:
+        """Overloads addition operator."""
+        return Point(self.x + value, self.y + value)
+    
     def scale_by(self, factor: int) -> None:
         """Multiplies x and y by a given factor."""
         self.x *= factor
